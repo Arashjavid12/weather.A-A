@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(#89cff0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #222;
+}
+
+/* سربرگ */
+header {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+header p {
+  color: #333;
+}
+
+/* بخش اصلی */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-box button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #0056d2;
+  transform: scale(1.05);
+}
+
+/* نتیجه */
+.result-box {
+  margin-top: 30px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: inline-block;
+  min-width: 250px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.result-box h2 {
+  color: #007bff;
+}
+
+.suggestion {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* پاورقی */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f0f0f0;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
